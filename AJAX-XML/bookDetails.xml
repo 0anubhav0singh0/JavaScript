@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<bookstore>
+
+
+<book category="Drama">
+
+<name>romeo and juliet</name>
+
+<author>Arthur Miller</author>
+
+<price>2000</price>
+
+<publication>Pearson</publication>
+
+</book>
+
+
+<book category="Drama">
+
+<name>The crucible</name>
+
+<author>shakesper</author>
+
+<price>2000</price>
+
+<publication>Drame Wolters Kluwer</publication>
+
+</book>
+
+
+<book category="Science fiction">
+
+<name>A brief history of time</name>
+
+<author>stephen hawkang</author>
+
+<price>2000</price>
+
+<publication>Pearson</publication>
+
+</book>
+
+</bookstore>
