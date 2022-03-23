@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Here we load data.</p>
+    <button onclick="loadData()">Click</button>
+    <script>
+        'use strict'
+        function loadData(){
+            let url = "https://jsonplaceholder.typicode.com/posts"
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                // console.log(this.readyState, this.status)
+                if(this.readyState == 4 && this.status == 200){
+                    document.querySelector("#demo").textContent = this.responseText;
+                    console.log(this.responseText);
+                }
+            }
+            // xhttp.open('GET', url, true);
+            xhttp.open('GET', "readme.txt", true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
